@@ -1,0 +1,28 @@
+email:
+  account_login: encevo-wettbewerb@dfki.de
+  password_env_var: ACCOUNT_PASSWORD
+  client_secret_env_var: CLIENT_SECRET
+  scopes: ["https://graph.microsoft.com/.default"]
+  graph_user_scopes:  
+    - User.Read 
+    - Mail.Read 
+    - Mail.Send
+
+  tenant_id: 61a9f1bd-7ea0-4068-b231-bb4a6bfcb700
+  client_id: c2da0138-c2d1-4764-b7da-a14919099263
+
+  incoming:
+    server: outlook.office365.com 
+    port: 993
+    protocol: IMAP
+    security: SSL/TLS
+
+  outgoing:
+    server: smtp.office365.com 
+    port: 587
+    protocol: SMTP
+    security: STARTTLS
+
+  # The Idea to use requests directly doesn't work without delegated access either
+  example_query: 
+    url: https://graph.microsoft.com/v1.0/me/messages/$count

@@ -1,0 +1,16 @@
+{
+  "location": "Lauperath",
+  "n_predictions": 96,
+  "predictions": [
+    {
+      "prediction_kw_normalized": 0.0,
+      "time": "2026-02-25T01:00:00+01:00"
+    },
+    {
+      "prediction_kw_normalized": 0.0,
+      "time": "2026-02-25T01:15:00+01:00"
+    }
+],
+  "request_url": "https://api.open-meteo.com/v1/forecast?latitude=50.084958&longitude=6.355283&hourly=cloud_cover%2Csnow_depth&minutely_15=temperature_2m%2Crelative_humidity_2m%2Cwind_gusts_10m%2Cwind_speed_10m%2Csunshine_duration%2Cshortwave_radiation%2Cdirect_radiation%2Cdiffuse_radiation%2Cdirect_normal_irradiance%2Cprecipitation%2Cis_day%2Csnowfall&models=ecmwf_ifs025",
+  "status": "ok"
+}
